@@ -1,0 +1,267 @@
+.institutions {
+  margin-bottom: 100px;
+  &__inner {
+    &_banner2 {
+      padding-bottom: 30px;
+    }
+  }
+  &__list {
+    padding-inline: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    //gap: 141px;
+    h2 {
+      color: #000;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 15px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      list-style-type: none;
+      color: #000;
+      font-family: Inter;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      li {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        position: relative;
+        &::before {
+          content: "●";
+          color: green;
+          position: absolute;
+          left: 0;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        color: #000;
+
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        gap: 3px;
+      }
+    }
+    &_list1 {
+      max-width: 307px;
+    }
+    &_list2 {
+      max-width: 250px;
+    }
+    &_list3 {
+      max-width: 283px;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .transform {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .institutions {
+    &__inner {
+      &_banner2 {
+        padding-bottom: 25px;
+      }
+    }
+    &__list {
+      padding-inline: 0px;
+      gap: 10px;
+      h2 {
+        font-size: 18px;
+      }
+      &_list1 {
+        max-width: 30%;
+      }
+      &_list2 {
+        max-width: 30%;
+      }
+      &_list3 {
+        max-width: 30%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .institutions {
+    margin-bottom: 80px;
+    &__inner {
+      &_banner2 {
+        img {
+          height: 240px !important;
+        }
+        padding-bottom: 23px;
+      }
+    }
+    &__list {
+      padding-inline: 0px;
+      gap: 10px;
+      flex-direction: column;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+      &_list1 {
+        max-width: initial;
+        ul {
+          display: flex;
+          flex-direction: initial;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 33px;
+
+          li {
+            width: 40%;
+          }
+        }
+      }
+      &_list2 {
+        max-width: initial;
+
+        ul {
+          display: flex;
+          flex-direction: initial;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 33px;
+
+          li {
+            width: 40%;
+          }
+        }
+      }
+      &_list3 {
+        max-width: initial;
+        ul {
+          display: flex;
+          flex-direction: initial;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 33px;
+
+          li {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .institutions {
+    &__inner {
+      &_banner2 {
+        img {
+          height: 210px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .institutions {
+    &__inner {
+      &_banner2 {
+        img {
+          height: 200px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  .institutions {
+    margin-bottom: 60px;
+    &__list {
+      padding-inline: 0px;
+      gap: 10px;
+      flex-direction: column;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+      &_list1 {
+        ul {
+          flex-direction: column;
+          margin-bottom: 10px;
+
+          li {
+            padding-left: 20px;
+            width:initial;
+          }
+        }
+      }
+      &_list2 {
+        ul {
+          flex-direction: column;
+          margin-bottom: 10px;
+
+          li {
+            padding-left: 20px;
+            width:initial;
+          }
+        }
+      }
+      &_list3 {
+        ul {
+          flex-direction: column;
+          margin-bottom: 10px;
+
+          li {
+            padding-left: 20px;
+            width:initial;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 370px) {
+  .institutions {
+    &__inner {
+      &_banner2 {
+        img {
+          height: 160px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.select {
+	width: 210px;
+	border-radius: 7px;
+	border: 1px solid var(--green, #309c54);
+	& > div {
+		border: none;
+		& > div {
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+	}
+}
+
+.base {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	&__label {
+		& > label {
+			color: $font-color;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+		& > p {
+			margin-top: 5px;
+			color: rgba(0, 0, 0, 0.54);
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			max-width: 594px;
+		}
+	}
+	&__control {
+		display: flex;
+		gap: 15px;
+	}
+}

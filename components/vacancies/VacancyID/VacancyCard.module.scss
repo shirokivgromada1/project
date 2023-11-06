@@ -1,0 +1,183 @@
+.buttonTop {
+  width: 40px !important;
+  height: 40px !important;
+  & > svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: #309c54 !important;
+  }
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.vacanciesCard {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  &__backward {
+    position: absolute;
+    left: 4.86%;
+    & > a {
+      display: inline-block;
+      height: 100%;
+      & > svg {
+        transform: scale(1.5);
+        & > path {
+          transition: all 0.3s linear;
+          stroke: #309c54;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+    &_title {
+      margin-bottom: 30px;
+      & > h1 {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &_image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    &_announceTitle {
+      text-align: center;
+      margin-bottom: 50px;
+      & > * {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &_description {
+      margin-bottom: 60px;
+      & > img {
+        width: 100%;
+      }
+      & > p {
+        color: #000;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+        list-style: none;
+        & > li {
+          color: #000;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &::before {
+            content: "\2022";
+            color: #309c54;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+          }
+        }
+      }
+    }
+    &_contactsInfo {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+    &_pubDate {
+      text-align: center;
+      color: #000;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vacanciesCard {
+    &__wrapper {
+      &_title {
+        & > h1 {
+          max-width: 568px;
+          margin: auto;
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vacanciesCard {
+    &__backward {
+      display: none;
+    }
+    &__wrapper {
+      padding: 0 20px;
+      &_announceTitle {
+        text-align: center;
+        margin-bottom: 50px;
+        & > * {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:first-child {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &_title {
+        & > h1 {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      &_image {
+        & img {
+          width: 350px !important;
+          height: 250px !important;
+        }
+      }
+    }
+  }
+}

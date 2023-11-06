@@ -1,0 +1,190 @@
+.favors {
+  margin-bottom: 70px;
+  h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .active {
+    svg {
+      transform: rotate(180deg);
+    }
+      transition: gap 1s ease-out;
+    }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &_favor {
+      width: 100%;
+      padding: 15px 20px 15px 30px;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        h3 {
+          max-width: 754px;
+          color: #309c54;
+          font-family: Inter;
+          font-size: 21px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        svg {
+          min-width: 49px;
+          min-height: 49px;
+          transform: rotate(0deg);
+          transition: transform 0.3s ease;
+          path {
+            stroke: #309c54;
+          }
+        }
+      }
+      &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+        li {
+          display: flex;
+          justify-content: space-between;
+          gap: 15px;
+          align-items: flex-start;
+          p {
+            display: flex;
+            gap: 3px;
+            max-width: 1000px;
+            span {
+              color: #000;
+
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 121.523%;
+            }
+          }
+          a {
+            border-radius: 29px;
+            background: #309c54;
+            padding: 9px 21px;
+            color: #fff;
+            cursor: pointer;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-wrap: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .favors {
+    margin-bottom:70px;
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &__inner {
+      gap: 15px;
+      &_favor {
+        padding: 18px 20px 18px 20px;
+        gap: 18px;
+        &_title {
+          gap: 15px;
+          h3 {
+            max-width: 500px;
+            font-size: 18px;
+            font-weight: 400;
+          }
+          svg {
+            min-width: 35px;
+            min-height:35px;
+
+          }
+        }
+        &_list {
+          gap: 18px;
+          li {
+            padding-left: 10px;
+            gap: 25px;
+            p {
+              max-width: 1000px;
+              gap: 5px;
+              span {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            a {
+              padding: 0;
+              border-radius: 50%;
+              min-width: 28px;
+              min-height: 28px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+             margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .favors {
+    h2 {
+      font-size: 18px;
+      font-weight:600;
+    }
+    &__inner {
+      gap: 40px;
+      &_favor {
+        padding: 0;
+        gap: 15px;
+        &_title {
+          border-bottom: 1px solid #309c54;
+          padding-bottom: 15px;
+          h3 {
+            max-width: 285px;
+            font-weight: 400;
+          }
+        }
+        &_list {
+          gap: 18px;
+          li {
+            padding-left: 0px;
+            gap: 10px;
+            flex-direction: column;
+            p {
+              gap: 0px;
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

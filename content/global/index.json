@@ -1,0 +1,240 @@
+{
+  "header": {
+    "icon": "/uploads/home/icon.svg",
+    "name": "Широківська громада",
+    "color": "default",
+    "nav": [
+      {
+        "href": "about-community",
+        "label": "Про громаду",
+        "isModal": true,
+        "links": [
+          {
+            "label": "Історія",
+            "href": "about-community"
+          },
+          {
+            "label": "Інвестиції",
+            "href": "investment"
+          },
+          {
+            "label": "Стратегія розвитку",
+            "href": "development-strategy"
+          },
+          {
+            "label": "Старостинські округи",
+            "href": "starostinsk-districts"
+          }
+        ]
+      },
+      {
+        "href": "/head-of-the-community",
+        "label": "Сільська рада",
+        "links": [
+          {
+            "label": "Заступники голови громади",
+            "href": "head-of-the-community#deputies",
+            "href1": "m-deputies-heads"
+          },
+          {
+            "label": "Секретар ради",
+            "href": "secretary-of-the-council"
+          },
+          {
+            "label": "Виконавчий комітет",
+            "href": "executive-committee"
+          },
+          {
+            "label": "Голова громади",
+            "href": "head-of-the-community"
+          },
+          {
+            "label": "Депутатський корпус",
+            "href": "deputies-corps"
+          },
+          {
+            "label": "Відділи апарат",
+            "href": "head-of-the-community#departments",
+            "href1": "m-departments"
+          },
+          {
+            "label": "КУ/КП/КНП",
+            "href": "head-of-the-community#enterprises",
+            "href1": "m-enterprises"
+          },
+          {
+            "label": "Опікунська рада",
+            "href": "guardians-board"
+          }
+        ]
+      },
+      {
+        "href": "all-services",
+        "label": "Послуги",
+        "links": [
+          {
+            "label": "Клініка \"Сімейний лікар\"",
+            "href": "family-doctor-clinic"
+          },
+          {
+            "label": "Комунальне майно",
+            "href": "communal-property"
+          },
+          {
+            "label": "Первинна правова допомога",
+            "href": "primary-legal-aid"
+          },
+          {
+            "label": "Соціальний захист",
+            "href": "social-protection"
+          },
+          {
+            "label": "ЦНАП",
+            "href": "administrative-services-center"
+          },
+          {
+            "label": "Опитування щодо якості послуг",
+            "href": "service-quality-survey"
+          }
+        ]
+      },
+      {
+        "href": "officially",
+        "label": "Офіційно",
+        "links": [
+          {
+            "label": "Документи",
+            "href": "documents"
+          },
+          {
+            "label": "Громадські слухання",
+            "href": "public-hearings"
+          },
+          {
+            "label": "Публічна інформація",
+            "href": "public-information"
+          },
+          {
+            "label": "Очищення влади",
+            "href": "power-purification"
+          },
+          {
+            "label": "Конкурси",
+            "href": "competitions"
+          },
+          {
+            "label": "Оголошення",
+            "href": "advertisements"
+          },
+          {
+            "label": "Петиціі ONLINE",
+            "href": "https://petition.e-dem.ua/shyroke"
+          },
+          {
+            "label": "Діючі програми Широківської громади",
+            "href": "current-programs"
+          },
+          {
+            "label": "Галузеві/міжгалузеві, територіальні угоди, колективні договори, зміни і доповнення",
+            "href": "branch-inter-branch-territorial-agreements-collective-agreements"
+          },
+          {
+            "label": "Перелік КНП ЗОЗ",
+            "href": "list-knp-zoh"
+          },
+          {
+            "label": "Фінансові плани КП та звіти",
+            "href": "financial-plans-and-reports"
+          },
+          {
+            "label": "Фінансовий відділ Широківської сільської ради",
+            "href": "financial-department"
+          },
+          {
+            "label": "Накази про присвоєння адреси закінченим об’єкту будівництва",
+            "href": "orders-assigning-address-to-completed-construction-project"
+          }
+        ]
+      },
+      {
+        "label": "Прес-центр",
+        "isModal": true,
+        "links": [
+          {
+            "label": "Анонси",
+            "href": "announcements"
+          },
+          {
+            "label": "Вакансії",
+            "href": "vacancies"
+          },
+          {
+            "label": "Газета",
+            "href": "newspapers"
+          },
+          {
+            "label": "Новини",
+            "href": "news"
+          }
+        ]
+      },
+      {
+        "label": "Корисна інформація",
+        "isModal": true,
+        "links": [
+          {
+            "label": "Проект PMCI",
+            "href": "projects-rmsi"
+          },
+          {
+            "label": "Заклади освіти",
+            "href": "education-institutions"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "nav": [
+      {
+        "href": "about_community",
+        "label": "Про громаду"
+      },
+      {
+        "href": "officially",
+        "label": "Офіційно"
+      },
+      {
+        "href": "head-of-the-community",
+        "label": "Сільська рада"
+      },
+      {
+        "href": "services",
+        "label": "Послуги"
+      },
+      {
+        "href": "announcements",
+        "label": "Прес-центр"
+      },
+      {
+        "href": "projects-rmsi",
+        "label": "Корисна інформація"
+      }
+    ],
+    "social": {
+      "facebook": "/",
+      "instagram": "/",
+      "telegram": "/"
+    },
+    "logo": "/uploads/home/logo-footer.svg",
+    "headline": "Широківська сільська рада  Запорізького району Запорізької області",
+    "location": "м. Запоріжжя, вул. Розенталь, 7",
+    "googleUrl": "https://www.google.com/maps/place/Rozental+St,+7,+Zaporizhzhia,+Zaporiz'ka+oblast,+Ukraine,+69000/@47.8602722,35.0099899,17z/data=!3m1!4b1!4m6!3m5!1s0x40dc63eafbf",
+    "workTime": "пн-пт, з 8 до 20 години",
+    "phone": "(061) 286-21-21"
+  },
+  "theme": {
+    "font": "sans",
+    "darkMode": "system"
+  }
+}

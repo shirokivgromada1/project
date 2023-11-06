@@ -1,0 +1,273 @@
+.educationInstitution {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  & > div {
+    & > h1 {
+      color: #000;
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 115.023%; /* 46.009px */
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+  }
+  &__inner {
+    width: 100%;
+    & tr {
+      &:not(:first-child) {
+        & > td {
+          padding-top: 40px;
+        }
+      }
+    }
+    & th {
+      text-align: left;
+      color: #000;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 40px;
+    }
+    & td {
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(48, 156, 84, 0.4);
+    }
+    &_name {
+      width: 275px;
+      & > h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      padding-right: 143px;
+    }
+    &_contacts {
+      width: 362px;
+      & > h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      padding-right: 178px;
+    }
+    &_address {
+      width: 240px;
+      & > h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  .educationInstitution {
+    &__inner {
+
+
+      &_name {
+        width: 275px;
+
+
+        padding-right: 110px;
+      }
+
+      &_contacts {
+        width: 362px;
+
+        padding-right: 140px;
+      }
+    }}
+}
+
+@media screen and (max-width: 1140px) {
+  .educationInstitution {
+    &__inner {
+
+
+      &_name {
+        width: 275px;
+
+
+        padding-right: 90px;
+      }
+
+      &_contacts {
+        width: 362px;
+
+        padding-right: 120px;
+      }
+    }}
+}
+
+@media screen and (max-width: 1095px) {
+  .educationInstitution {
+    &__inner {
+      &_contacts {
+        & > h5 {
+          width: 160px;
+        }
+      }
+    }}
+}
+
+@media only screen and (max-width: 768px) {
+  .educationInstitution {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    & > div {
+      & > h1 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: normal;
+        margin-block: 20px;
+      }
+    }
+    &__inner {
+      & tbody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      tbody > * {
+        height: 268px;
+        flex: 0 0 calc(50% - 20px);
+        padding: 25px 20px;
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+        &:not(:last-child){
+         margin-bottom: 20px;
+        }
+      }
+      & tr {
+          display: flex;
+          flex-direction: column;
+
+        &:not(:first-child) {
+          & > td {
+            padding-top: 0px;
+          }
+        }
+      }
+      & th {
+       display: none;
+      }
+      & td {
+
+        padding: 0;
+        border-bottom: none;
+      }
+      &_name {
+        width: 100%;
+        & > h5 {
+          &:first-of-type {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &_contacts {
+        padding-top: 10px !important;
+        width: 100%;
+        & > h5 {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:first-of-type {
+            color: #000;
+            font-weight: 600;
+          }
+        }
+      }
+      &_address {
+        width: 100%;
+        & > h5 {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .educationInstitution {
+    &__inner {
+        &_name {
+          & > h5 {
+            &:first-of-type {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+@media only screen and (max-width: 552px) {
+  .educationInstitution {
+
+    &__inner {
+      & tbody {
+        display: flex;
+        flex-direction: column;
+      }
+      tbody > * {
+        padding: 25px 20px;
+        &:not(:last-child){
+          margin-bottom: 25px;
+        }
+      }
+      &_name {
+        & > h5 {
+          &:first-of-type {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+  }
+}}
+@media only screen and (max-width: 390px) {
+  .educationInstitution {
+    margin-bottom:50px;
+    & > div {
+      & > h1 {
+        font-size: 22px;
+        margin-block: 40px 20px;
+      }
+    }
+    &__inner {
+
+      &_name {
+        width: 100%;
+
+        & > h5 {
+          //&:nth-of-type(2) {
+          //  width: 200px;
+          //}
+        }
+      }
+    }
+  }}

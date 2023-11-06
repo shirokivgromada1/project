@@ -1,0 +1,122 @@
+.officially {
+  margin-bottom: 90px;
+  h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115.023%; /* 46.009px */
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 30px;
+      color: #000;
+      gap: 20px;
+      background: #fff;
+      box-shadow: 0px 4px 10px 0px rgba(85, 85, 85, 0.12);
+      transition: background 0.4s ease-in-out;
+      &:hover {
+        background: #309c54;
+        div {
+          background: #fff;
+        }
+        h5 {
+          color: #fff;
+          span {
+            color: #fff;
+          }
+        }
+      }
+      h5 {
+        color: #000;
+        text-align: start;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: color 0.4s ease-in-out;
+        span {
+          text-transform: uppercase;
+          color: #309c54;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          transition: color 0.4s ease-in-out;
+        }
+      }
+      div {
+        min-width: 9px;
+        min-height: 40px;
+        background: #309c54;
+        transition: background 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .officially {
+    margin-bottom: 70px;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      margin-block: 20px;
+    }
+    &__inner {
+      gap: 15px;
+      &_item {
+        padding: 15px 30px 15px 25px;
+        gap: 15px;
+        h5 {
+          font-size: 16px;
+          span {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        div {
+          min-width: 5px;
+          min-height: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .officially {
+    margin-bottom:50px;
+    h1 {
+      font-size: 22px;
+      margin-block: 40px 20px;
+    }
+    &__inner {
+      &_item {
+        padding: 12px 20px;
+        gap: 0;
+        h5 {
+          font-size: 18px;
+          span {
+            font-size: 18px;
+          }
+        }
+        div {
+          display: none;
+        }
+      }
+    }
+  }
+}

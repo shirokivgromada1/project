@@ -1,0 +1,252 @@
+.leftArrow {
+  position: absolute;
+  left: 0px;
+  top: 96px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 13px rgba(75, 75, 75, 0.07));
+    background-color: #fff;
+    transition: all 0.3s linear;
+    & > svg {
+      width: 25px;
+      height: 25px;
+      fill: #309c54;
+    }
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+}
+
+.rightArrow {
+  position: absolute;
+  right: 0px;
+  top: 96px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 13px rgba(75, 75, 75, 0.07));
+    background-color: #fff;
+    transition: all 0.3s linear;
+    & > svg {
+      width: 25px;
+      height: 25px;
+      fill: #309c54;
+    }
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+}
+
+.swiperButton {
+  display: flex;
+  position: absolute;
+  top: 140px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.imageSwiperButtonPrev {
+  left: 15px;
+}
+.imageSwiperButtonNext {
+  right: 15px;
+}
+
+.swiperButtonDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.info {
+  margin-bottom: 100px;
+
+  & > div {
+    position: relative;
+    overflow: hidden !important;
+  }
+  &__swiper {
+    overflow: hidden !important;
+
+    & > div > div {
+      height: auto;
+      width: fit-content;
+      margin-right: 72px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__page {
+    height: 100%;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      & h5 {
+        color: #309c54;
+      }
+    }
+    & > div {
+      & > h5 {
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115.023%;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        color: #000;
+      }
+      & img {
+        max-width: 385px;
+        min-width: 219px;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 242px;
+        border-radius: 2px;
+        margin-bottom: 11px;
+      }
+      & p {
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115.023%;
+        margin-bottom: 15px;
+        color: #000;
+      }
+    }
+    & > button {
+      background: #309c54;
+      width: 172px;
+      height: 33px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 115.023%;
+      border-radius: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .info {
+    & > div {
+      gap: 15px;
+      & > div {
+        & > h5 {
+          font-size: 24px;
+        }
+        & > img {
+          max-width: 100%;
+          height: 181px;
+        }
+        & > p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .swiperButton {
+    top: 100px;
+  }
+  .info {
+    &__swiper {
+      & > div {
+        & > div {
+          margin-right: 15px;
+        }
+      }
+    }
+    &__page {
+      width: 219px;
+      & > button {
+        width: 131px;
+        border-radius: 15px;
+        color: #fff;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 6px 21px;
+      }
+    }
+    & > div {
+      grid-template-columns: 1fr 1fr;
+      & > div {
+        & img {
+          width: 100% !important;
+          min-height: 160px !important;
+          height: 100% !important;
+          max-height: 170px !important;
+        }
+        & p {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 115.023%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .leftArrow {
+    &__button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .rightArrow {
+    &__button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .info {
+    & > div {
+      & > div {
+        & > h5 {
+          color: #000;
+          /* h2 phone */
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+query contentQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+}
+
+query blogNewsQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  news(relativePath: $relativePath) {
+    ...NewsParts
+  }
+}
+
+query departmentPeopleQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  departmentPeople(relativePath: $relativePath) {
+    ...DepartmentPeopleParts
+  }
+}
+
+query blogAnnouncementsQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  announcements(relativePath: $relativePath) {
+    ...AnnouncementsParts
+  }
+}
+
+query announcementsPageQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  announcementsConnection {
+    edges {
+      node {
+        ...AnnouncementsParts
+      }
+    }
+  }
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+}
+
+query newsPageQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  newsConnection {
+    edges {
+      node {
+        ...NewsParts
+      }
+    }
+  }
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+}
+
+query vacanciesPageQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  vacanciesConnection {
+    edges {
+      node {
+        ...VacanciesParts
+      }
+    }
+  }
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+}
+
+query newspapersPageQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  newspapersConnection {
+    edges {
+      node {
+        ...NewspapersParts
+      }
+    }
+  }
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+}
+
+query blogVacanciesQuery($relativePath: String!) {
+  ...LayoutQueryFragment
+  vacancies(relativePath: $relativePath) {
+    ...VacanciesParts
+  }
+}

@@ -1,0 +1,67 @@
+.settings {
+	&_headlines {
+		margin-bottom: 40px;
+		& > h1 {
+			color: #000;
+			font-family: Inter;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 10px;
+		}
+		& > h5 {
+			color: #000;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		&_phone {
+			display: flex;
+			flex-direction: column;
+			& > div {
+				&:nth-child(2) {
+					& > div {
+						// margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+	&_exit {
+		margin-top: 60px;
+		& > button {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			&:hover {
+				& > span {
+					text-decoration-line: underline;
+				}
+			}
+			& > span {
+				color: $font-color;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.settings {
+		& input:read-only:not([placeholder="••••••••••"]) {
+			text-align: center;
+		}
+	}
+}

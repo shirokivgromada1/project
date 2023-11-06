@@ -1,0 +1,148 @@
+.towns {
+  margin-bottom: 100px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &_desc {
+      max-width: 1091px;
+      margin-inline: auto;
+      h3 {
+        color: #000;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 5px;
+      }
+      p {
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    div {
+      width:23%;
+      padding: 20px;
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 5px;
+      background: #FFF;
+min-height: 60px;
+      box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+      button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        h5 {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      p {
+        padding-top: 10px;
+        color: #000;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .show {
+    min-height: 137px !important;
+  }
+  .transform {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .towns {
+    &__list {
+      column-gap: 15px;
+      div {
+        width:32%;
+        padding: 20px 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .towns {
+    margin-bottom: 80px;
+    &__inner {
+      &_desc {
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &__list {
+      div {
+        width:48%;
+        padding: 20px 10px;
+        button {
+          h5 {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .towns {
+    margin-bottom: 60px;
+    &__inner {
+      &_desc {
+        margin-bottom: 40px;
+      }
+    }
+    &__list {
+      div {
+        height: 60px;
+        width:100%;
+        padding: 15px 20px;
+        align-items: flex-start;
+        button {
+          justify-content: space-between;
+          width: 100%;
+          h5 {
+            font-size: 16px;
+          }
+        }
+        p {
+          text-align: start;
+        }
+      }
+    }
+    .show {
+      min-height: initial !important;
+    }
+  }
+}

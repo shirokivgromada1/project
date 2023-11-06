@@ -1,0 +1,186 @@
+.header {
+  padding: 25px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: var(--themeBgColor);
+  transition: all 0.3s linear;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    &_load {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    & > a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #000;
+      & > span {
+        font-family: Inter;
+        font-size: calc(var(--themeFontSize) * 18px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 115.023%;
+        text-transform: uppercase;
+        width: max-content;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    & > ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  &__options {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    &_burger {
+      & > svg {
+        & > rect {
+          transition: x 0.5s, width 0.5s;
+        }
+      }
+      &_active {
+        & > rect {
+          &:first-child {
+            x: 10.0625px;
+            width: 35px;
+          }
+          &:nth-child(2) {
+            x: 20.0625px;
+            width: 25px;
+          }
+          &:last-child {
+            x: 10.0625px;
+            width: 35px;
+          }
+        }
+      }
+    }
+    &_controllers {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      & > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #309c54;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115.023%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .header {
+    & > div {
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1335px) {
+  .header {
+    &__options {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    & > div {
+      padding-inline: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .header {
+    &__options {
+      &_controllers {
+        & > button {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 40px;
+    }
+    &__nav {
+      display: none;
+    }
+    &__options {
+      gap: 40px;
+      &_controllers {
+        & > button {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    & > div {
+      padding-inline: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__logo {
+      & > a {
+        flex-direction: column;
+        align-items: start;
+        & > span {
+          display: none;
+          width: 142px;
+        }
+      }
+    }
+    &__options {
+      &_controllers {
+        display: none;
+      }
+    }
+  }
+}

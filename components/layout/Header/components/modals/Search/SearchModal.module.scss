@@ -1,0 +1,134 @@
+.modal {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+	z-index: 100;
+	&__inner {
+		background-color: #fff;
+		width: 800px;
+		min-height: 180px;
+		border-radius: 20px;
+		box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+		&_search {
+			width: 100%;
+			display: flex;
+			position: relative;
+			& > input {
+				padding: 20px 0 20px 64px;
+				width: 100%;
+				outline: none;
+				border-radius: 20px 20px 0 0;
+				border: none;
+				color: #000;
+				font-family: Inter;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				text-transform: capitalize;
+				border-bottom: 1px solid rgba(163, 163, 163, 0.5);
+				&:focus {
+					border-bottom: 1px solid rgba(48, 156, 84, 0.5);
+					& ~ label > svg {
+						fill: #309c54;
+					}
+				}
+			}
+			& > label > svg {
+				position: absolute;
+				top: 50%;
+				left: 30px;
+				transform: translateY(-50%);
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+				transition: fill 0.3s linear;
+			}
+		}
+		&_loading {
+			border-bottom: 1px solid rgba(163, 163, 163, 0.5);
+			padding: 10px 30px;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			& > span {
+				color: #000;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 115.023%; /* 18.404px */
+				text-transform: capitalize;
+				clip-path: inset(0 0.8ch 0 0);
+				animation: l 0.8s steps(4) infinite;
+			}
+			& > div {
+				height: 7px;
+				width: 100%;
+				border-radius: 50px;
+				background: #ccc;
+				position: relative;
+				overflow: hidden;
+				&:before {
+					content: "";
+					position: absolute;
+					width: 29.6px;
+					height: 7px;
+					top: 0;
+					bottom: 0;
+					left: -20px;
+					border-radius: inherit;
+					background: #309c54;
+					animation: ct4 4s infinite linear;
+				}
+			}
+		}
+		&_answers {
+			display: flex;
+			flex-direction: column;
+			max-height: 400px;
+			overflow: auto;
+			& > div {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				padding: 20px 30px;
+				border-bottom: 1px solid rgba(163, 163, 163, 0.1);
+				cursor: pointer;
+				&:hover > a {
+					color: #309c54;
+				}
+				& > a {
+					color: #000;
+					font-family: Inter;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 115.023%; /* 18.404px */
+					text-decoration-line: underline;
+					text-transform: capitalize;
+					transition: color 0.1s linear;
+					&:hover {
+						color: #309c54;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes ct4 {
+	100% {
+		left: calc(100% + 20px);
+	}
+}
+
+@keyframes l {
+	to {
+		clip-path: inset(0 -1ch 0 0);
+	}
+}

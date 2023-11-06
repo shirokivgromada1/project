@@ -1,0 +1,250 @@
+.stepper {
+  &__step {
+    &_label {
+      & > span > span {
+        color: #000;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115.023%;
+      }
+    }
+    &_content {
+      &_flex {
+        display: flex;
+        gap: 15px;
+      }
+      &_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 15px;
+        & > div {
+          position: relative;
+          display: flex;
+        }
+        &_flex {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start !important;
+          margin-top: 15px;
+          &_validationContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #737373;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 15px;
+            & > div {
+              display: grid;
+              grid-template-columns: 138px auto;
+              align-items: center;
+              gap: 23px;
+              & > svg {
+                background-color: #f2f2f2;
+                border-radius: 50%;
+              }
+            }
+          }
+          &_input {
+            margin: 0;
+            position: relative;
+            & > div {
+              &:first-child {
+                border-radius: 7px;
+
+                color: #309c54 !important;
+                margin-bottom: 10px;
+
+                & input {
+                  color: rgba(0, 0, 0, 0.6);
+                  font-family: Inter;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  padding: 9px 20px;
+                  width: 275px;
+                  &:hover {
+                    outline: none;
+                  }
+                  &:focus {
+                    border: none;
+                    outline: none;
+                  }
+                }
+              }
+              &:nth-child(2) {
+                position: absolute;
+                right: 34px;
+                top: calc(50% - 4.5px);
+                & > button {
+                  box-shadow: none;
+                  padding: 0px;
+                  & > svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #9f9f9f;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &_button {
+          &_timer {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            & span {
+              color: #000;
+              font-family: Inter;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              user-select: none;
+            }
+          }
+        }
+        &_textField {
+          margin-top: 15.5px;
+          &_timer {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 6px;
+            & span {
+              color: #000;
+              font-family: Inter;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              user-select: none;
+            }
+          }
+          & input {
+            width: 418px;
+            color: #000 !important;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        & button {
+          width: fit-content;
+          padding: 15px 30px;
+          text-transform: unset;
+          border-radius: 5px;
+          background: var(--green, #309c54);
+          box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.15);
+          color: #fff;
+          font-family: Inter;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:hover {
+            background: var(--green, #206537);
+          }
+        }
+      }
+    }
+  }
+}
+
+.error {
+  & fieldset {
+    border-color: #d32f2f !important;
+  }
+}
+
+.success {
+  & fieldset {
+    border-color: #309c54 !important;
+  }
+}
+
+.selectStatus {
+  width: 273px;
+  & > div {
+    padding: 9px 20px;
+
+    &:nth-child(3) {
+      height: 100%;
+      border: 1px solid #309c54;
+      color: #000;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      & > div {
+        padding: 0px;
+        & > div {
+          padding: 0px;
+        }
+        & > span {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      padding: 0px;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 190px;
+        & > div {
+          padding-top: 20px;
+          padding-bottom: 11px;
+          border-bottom: 1px solid rgba(48, 156, 84, 0.25);
+          cursor: pointer;
+          & > div {
+            color: #000;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .stepper {
+    &__step {
+      &_content {
+        &_wrapper {
+          & > div {
+            flex-direction: column;
+            & > div {
+              width: 100%;
+            }
+            & > button {
+              padding: 9px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

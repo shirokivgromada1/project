@@ -1,0 +1,129 @@
+.stepper {
+  &__step {
+    &_label {
+      cursor: pointer;
+      & > span > span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115.023%;
+        &:first-child {
+          color: #000;
+          font-size: 15px;
+        }
+      }
+    }
+    &_content {
+      &_wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: flex-end;
+        & > div {
+          position: relative;
+          display: flex;
+          gap: 15px;
+        }
+        &_button {
+          &_timer {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            & span {
+              color: #000;
+              font-family: Inter;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              user-select: none;
+            }
+          }
+        }
+        &_textField {
+          margin-top: 15.5px;
+          &_timer {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 6px;
+            & span {
+              color: #000;
+              font-family: Inter;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              user-select: none;
+            }
+          }
+          & input {
+            width: 418px;
+            color: #000 !important;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        & button {
+          width: fit-content;
+          padding: 8px 17px;
+          text-transform: unset;
+          border-radius: 3px;
+          border-radius: 3px;
+          background: #309c54;
+          box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.15);
+          color: #fff;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:hover {
+            background: #206537;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .stepper {
+    &__step {
+      &_content {
+        &_wrapper {
+          & > div {
+            &:first-child {
+              width: 100%;
+            }
+          }
+          &_textField input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .stepper {
+    &__step {
+      &_content {
+        &_wrapper {
+          flex-direction: column;
+          align-items: flex-start;
+          & button {
+            padding: 5px 17px;
+          }
+        }
+      }
+    }
+  }
+}
