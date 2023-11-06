@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@tinacms/cli": "1.5.13",
+    "@tinacms/cli": "1.5.31",
     "@types/crypto-js": "^4.1.2",
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
