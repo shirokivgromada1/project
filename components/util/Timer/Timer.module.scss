@@ -1,0 +1,21 @@
+.timer {
+	top: 10px !important;
+	height: fit-content;
+	display: flex;
+	gap: 3px;
+	& > span {
+		color: $font-color;
+		font-family: Inter;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	& > svg {
+		width: fit-content !important;
+		height: fit-content !important;
+		& > path {
+			fill: $font-color;
+		}
+	}
+}

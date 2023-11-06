@@ -1,0 +1,323 @@
+.noAnnouncements {
+  margin-top: 30px;
+  margin-bottom: 170px;
+  & p {
+    color: #309c54;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.announcements {
+  margin-top: 40px;
+  margin-bottom: 150px;
+  &__loader {
+    display: flex;
+    justify-content: center;
+  }
+  &__skeletonContainer {
+    display: grid;
+    grid-template-columns: 62px 1fr;
+    gap: 43px;
+  }
+  & > div {
+    & > h1 {
+      color: #000;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+  }
+  &__filter {
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    & > div > a {
+      display: grid;
+      grid-template-columns: 62px 1fr;
+      gap: 43px;
+      &:last-child {
+      }
+      &:hover {
+        & h5 {
+          color: #309c54;
+        }
+      }
+    }
+
+    &_time {
+      position: relative;
+      z-index: -1;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        height: 80%;
+        width: 2px;
+        background: #c2c5cb;
+        border-radius: 4px;
+      }
+      &_calendar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: #fff;
+        & path {
+          stroke: #c2c5cb;
+        }
+      }
+      &_clock {
+        display: flex;
+        gap: 6px;
+        position: absolute;
+        top: 50px;
+        left: 3px;
+        z-index: 2;
+        background: #fff;
+        padding-block: 5px;
+        &_noImg {
+          top: 35px !important;
+          & > span {
+            color: #636363;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+        & > span {
+          color: #636363;
+          font-family: Inter;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+    &_info {
+      & > h1 {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 12px;
+      }
+      &_wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 65px;
+        & > svg {
+          & > path {
+            stroke: #309c54;
+          }
+        }
+        &__inner {
+          display: grid;
+          grid-template-columns: 254px 1fr;
+          gap: 10px;
+          &_onlyTitle {
+            grid-template-columns: 1fr !important;
+            & h5 {
+              color: #000;
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              width: 817px;
+            }
+          }
+          & > img {
+            width: 254px;
+            height: 112px;
+            object-fit: cover;
+          }
+          & h5 {
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    & > div {
+      & > button {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      & > span {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    &__active {
+      color: #309c54 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .announcements {
+    margin-top: 20px;
+    & > div > h1 {
+      color: #000;
+      /* h1 */
+      font-family: Inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      gap: 20px;
+      & > div > a {
+        gap: 25px;
+        grid-template-columns: 35px 1fr;
+        min-height: 118px;
+      }
+      &_time {
+        &:before {
+          left: 19px;
+          width: 1px;
+          background: linear-gradient(#c2c5cb 65%, transparent);
+        }
+        &_calendar {
+          left: 8px;
+        }
+        &_clock {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & > span {
+            color: #636363;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+      &_info {
+        & > h1 {
+          color: #000;
+          /* h2 phone */
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        &_wrapper {
+          grid-template-columns: 1fr;
+          & > svg {
+            display: none;
+          }
+          &__inner {
+            grid-template-columns: auto 1fr;
+            & > img {
+              width: 180px;
+              height: 114px;
+            }
+            & > h5 {
+              color: #004bc1;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+            &_onlyTitle {
+              & > h5 {
+                width: auto;
+                color: #004bc1;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__pagination {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .announcements {
+    &__inner {
+      & > div > a {
+        min-height: 121px !important;
+      }
+      &_time {
+        &_clock {
+          top: 35px;
+        }
+      }
+      &_info {
+        & > h1 {
+          margin-bottom: 10px;
+        }
+        & img {
+          display: none !important;
+        }
+        &_wrapper {
+          &__inner {
+            grid-template-columns: 1fr;
+            gap: 0px;
+            & > h5 {
+              color: #004bc1;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

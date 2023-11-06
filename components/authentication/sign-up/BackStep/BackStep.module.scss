@@ -1,0 +1,18 @@
+.stepBack {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  background-color: #309c54;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .stepBack {
+    display: none;
+  }
+}

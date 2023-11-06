@@ -1,0 +1,10 @@
+$primary-color: #309c54;
+$hover-primary-color: #206537;
+$disabled-primary-bg: #0000001f;
+$disabled-primary-color: #00000042;
+$error-primary-color: #ff1010;
+$font-color: #000000;
+
+:export {
+	primaryColor: $primary-color;
+}

@@ -1,0 +1,291 @@
+.contact {
+  margin-bottom: 90px;
+  margin-inline: auto;
+  h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;gap: 35px;
+    &_schedule {
+      display: flex;
+      width: 410px;
+      padding: 25px 53px 25px 30px;
+      align-items: flex-start;
+      gap: 30px;
+      background: #fff;
+      box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+      img {
+        min-width: 50px !important;
+        min-height: 50px !important;
+      }
+      &_desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h5 {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+        p {
+          max-width: 155px;
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    &_address {
+      display: flex;
+      width: 410px;
+      padding: 25px 53px 25px 30px;
+      align-items: flex-start;
+      gap: 30px;
+      background: #fff;
+      box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+      img {
+        min-width: 50px !important;
+        min-height: 50px !important;
+      }
+      h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+      a {
+        border-radius: 29px;
+        background: #309c54;
+        padding: 7px 22px;
+        color: #fff;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    &_socials {
+      display: flex;
+      width: 410px;
+      padding: 25px 53px 25px 30px;
+      align-items: flex-start;
+      gap: 30px;
+      background: #fff;
+      box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+      .img {
+        min-width: 50px !important;
+        min-height: 50px !important;
+      }
+      &_desc {
+        h5 {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+      }
+      &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          span {
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact {
+    &__inner {
+      gap: 20px;
+      &_schedule {
+        padding: 20px 30px 20px 20px;
+        gap: 15px;
+        img {
+          min-width: 40px !important;
+          min-height: 40px !important;
+        }
+      }
+      &_address {
+        padding: 20px 30px 20px 20px;
+        gap: 15px;
+        img {
+          min-width: 40px !important;
+          min-height: 40px !important;
+        }
+        a {
+          padding: 7px 15px;
+          font-size: 16px;
+        }
+      }
+      &_socials {
+        padding: 20px 30px 20px 20px;
+        gap: 15px;
+        .img {
+          min-width: 40px !important;
+          min-height: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .contact {
+    &__inner {
+      flex-direction: column;
+      gap: 20px;
+      &_schedule {
+        width: initial;
+        padding:40px 30px;
+        gap: 30px;
+        img {
+          min-width: 50px !important;
+          min-height: 50px !important;
+        }
+        &_desc {
+          flex-direction: initial;
+          gap: 70px;
+        }
+      }
+      &_address {
+        width: initial;
+        padding:40px 30px;
+        gap: 30px;
+        img {
+          min-width: 50px !important;
+          min-height: 50px !important;
+        }
+        a {
+          padding: 7px 22px;
+        }
+      }
+      &_socials {
+        width: initial;
+        padding:40px 30px;
+        gap: 30px;
+        .img {
+          min-width: 50px !important;
+          min-height: 50px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    margin-bottom: 70px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      &_schedule {
+        padding:20px 30px;
+        &_desc {
+          gap: 40px;
+        }
+      }
+      &_address {
+        padding:20px 30px;
+      }
+      &_socials {
+        padding:20px 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contact {
+    &__inner {
+      &_schedule {
+        &_desc {
+          gap: 15px;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  .contact {
+    margin-bottom: 50px;
+    &__inner {
+      &_schedule {
+        padding: 22px 15px;
+      }
+      &_address {
+        padding: 22px 15px;
+        a {
+          padding: 7px 15px;
+          font-size: 14px;
+        }
+      }
+      &_socials {
+        padding: 22px 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 310px) {
+  .contact {
+    &__inner {
+      &_schedule {
+        gap: 20px;
+      }
+      &_address {
+        gap: 20px;
+        a {
+          font-size: 13px;
+          font-weight: 400;
+          padding: 7px 12px;
+        }
+      }
+      &_socials {
+        gap: 20px;
+      }
+    }
+  }
+}

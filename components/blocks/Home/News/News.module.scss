@@ -1,0 +1,37 @@
+.news {
+  margin-bottom: 100px;
+  overflow: hidden;
+  & > div > h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 115.023%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .news {
+    margin-bottom: 90px;
+    & > div > h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .news {
+    & > div > h1 {
+      color: #011f26;
+      text-align: center;
+      font-family: Inter;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}

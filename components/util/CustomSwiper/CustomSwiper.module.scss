@@ -1,0 +1,212 @@
+.leftArrow {
+  position: absolute;
+  left: 0px;
+  top: 96px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 13px rgba(75, 75, 75, 0.07));
+    background-color: #fff;
+    transition: all 0.3s linear;
+    & > svg {
+      width: 25px;
+      height: 25px;
+      fill: #309c54;
+    }
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+}
+
+.rightArrow {
+  position: absolute;
+  right: 0px;
+  top: 96px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 13px rgba(75, 75, 75, 0.07));
+    background-color: #fff;
+    transition: all 0.3s linear;
+    & > svg {
+      width: 25px;
+      height: 25px;
+      fill: #309c54;
+    }
+    &:hover {
+      background-color: #e1e1e1;
+    }
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+.newsSwiper {
+  overflow: hidden;
+  &__slide {
+    max-width: 408px;
+    margin-right: 38px;
+    &:last-child {
+      margin-right: 0px !important;
+    }
+    & img {
+      object-fit: cover;
+      width: 408px;
+      height: 242px;
+      margin-bottom: 8px;
+    }
+    & h5 {
+      font-family: Inter;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 115.023%;
+      margin-bottom: 8px;
+      color: #011f26;
+    }
+    & > a {
+      &:hover {
+        & h5 {
+          color: #309c54;
+        }
+      }
+      & > div {
+        display: inline;
+        & * {
+          font-family: Inter;
+          font-size: 15px !important;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: none;
+          margin-bottom: 0px;
+          text-decoration: none;
+          display: inline;
+          color: #000;
+        }
+      }
+    }
+    & button {
+      color: #4196d6;
+      font-family: Inter;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .newsSwiper {
+    &__slide {
+      max-width: 408px;
+      margin-right: 38px;
+      &:last-child {
+        margin-right: 0px !important;
+      }
+      & img {
+        width: 408px;
+        height: 242px;
+        margin-bottom: 8px;
+      }
+      & h5 {
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115.023%;
+        margin-bottom: 8px;
+      }
+      & > a {
+        cursor: pointer;
+        & > div {
+          display: inline;
+          & * {
+            font-family: Inter;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: none;
+            margin-bottom: 0px;
+            text-decoration: none;
+            display: inline;
+            color: #000;
+          }
+        }
+      }
+      & button {
+        color: #4196d6;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsSwiper {
+    &__slide {
+      max-width: 408px;
+      margin-right: 40px;
+      & img {
+        width: 408px;
+        height: 242px;
+        margin-bottom: 8px;
+      }
+      & h5 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .leftArrow {
+    &__button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .rightArrow {
+    &__button {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .newsSwiper {
+    &__slide {
+      max-width: 270px !important;
+      margin-right: 10px !important;
+      & img {
+        width: 270px;
+        height: 190px;
+        margin-bottom: 8px;
+      }
+      & h5 {
+        font-size: 18px;
+      }
+    }
+  }
+}

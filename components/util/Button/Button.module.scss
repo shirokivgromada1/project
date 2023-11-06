@@ -1,0 +1,21 @@
+.button {
+  border-radius: 5px !important;
+  background-color: $primary-color !important;
+  padding: 9px 18px !important;
+  color: #fff !important;
+  font-family: Inter !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  text-transform: none !important;
+  &:hover {
+    background-color: $hover-primary-color !important;
+  }
+  &:disabled {
+    background-color: $disabled-primary-bg !important;
+    color: $disabled-primary-color !important;
+    cursor: not-allowed !important;
+    pointer-events: unset !important;
+  }
+}

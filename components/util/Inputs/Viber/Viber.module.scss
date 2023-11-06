@@ -1,0 +1,48 @@
+.viberContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 25px;
+	&__label {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		& > label {
+			color: $font-color;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+		& > p {
+			color: rgba(0, 0, 0, 0.54);
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	&__control {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&_icon {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			& > svg {
+				flex-shrink: 0;
+			}
+			& > span {
+				color: $font-color;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+}

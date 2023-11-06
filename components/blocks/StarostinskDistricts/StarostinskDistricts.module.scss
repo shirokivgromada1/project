@@ -1,0 +1,309 @@
+.districts {
+  margin-bottom: 120px;
+  h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115.023%; /* 46.009px */
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 40px;
+  }
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    row-gap: 50px;
+    justify-content: center;
+    max-width: 1210px;
+    margin-inline: auto;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+    }
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 35px 55px;
+      background: #f9fafb;
+      img {
+        padding-block: 20px 15px !important;
+      }
+      button {
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+      &_overall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        //margin-bottom: 5px;
+        h3 {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      &_info {
+        flex-direction: column;
+        align-items: center;
+        //padding-bottom: 7px;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        h3 {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 7px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          align-items: center;
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
+@media screen and (max-width: 1065px) {
+  .districts {
+    &__list {
+      &_item {
+        padding: 20px 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .districts {
+    &__list {
+      &_item {
+        padding: 16px 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 771px) {
+  .districts {
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-block: 20px;
+    }
+    &__list {
+      gap: 20px;
+      justify-content: center;
+      & > div {
+        gap: 20px;
+      }
+      &_item {
+        &_overall {
+          margin-bottom: 1px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        &_info {
+          & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          h3 {
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+
+          img {
+            width: 90px;
+            height: 90px;
+            margin-block: 10px;
+          }
+
+          ul {
+            font-size: 15px;
+            font-weight: 400;
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .districts {
+    h1 {
+      font-size: 25px;
+    }
+    &__list {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .districts {
+    h1 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-block: 40px;
+    }
+    &__list {
+      &_item {
+        align-items: flex-start;
+        padding: 20px;
+        button {
+          width: 100%;
+          p {
+            text-align: start;
+          }
+        }
+        &_overall {
+          justify-content: space-between;
+          h3 {
+            text-align: start;
+            font-size: 18px;
+          }
+        }
+        &_info {
+          align-items: flex-start;
+          & > p {
+            margin-bottom: 25px;
+          }
+          img {
+            display: none !important;
+          }
+          h3 {
+            text-align: start;
+          }
+          ul {
+            font-size: 16px;
+            align-items: flex-start;
+            text-align: start;
+          }
+
+          p {
+            font-size: 16px;
+            text-align: start;
+          }
+          p:last-child {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .districts {
+    h1 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-block: 40px;
+    }
+    &__list {
+      &_item {
+        button {
+        }
+        &_overall {
+          h3 {
+            font-size: 16px;
+          }
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        &_info {
+          align-items: flex-start;
+          & > p {
+            margin-bottom: 20px;
+          }
+          img {
+            display: none;
+          }
+          h3 {
+            text-align: start;
+          }
+          ul {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .districts {
+    &__list {
+      &_item {
+        padding: 10px;
+      }
+    }
+  }
+}

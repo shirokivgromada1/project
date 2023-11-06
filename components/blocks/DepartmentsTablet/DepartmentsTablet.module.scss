@@ -1,0 +1,126 @@
+.departments {
+  margin-bottom: 100px;
+  h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-block: 20px;
+    text-align: center;
+  }
+  &__inner {
+    max-width: 700px;
+    margin-inline: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    &_department {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px 15px;
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+      height: 159px;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in;
+      &:hover {
+        background-color: #309c54;
+        h3 {
+          color: #ffffff;
+        }
+        img {
+          filter: brightness(100) !important;
+        }
+      }
+      img {
+       transition: filter 0.4s ease-out;
+      }
+      &_desc {
+
+        h3 {
+          transition: color 0.4s ease-in;
+          color: #309c54;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 630px) {
+  .departments {
+    &__inner {
+      gap: 10px;
+      &_department {
+        gap: 10px;
+        padding: 20px 10px;
+        &_desc {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .departments {
+    &__inner {
+      gap: 20px;
+      grid-template-columns: initial;
+      &_department {
+        border-radius: 5px;
+        padding: 20px 50px;
+        height: 160px;
+        &_desc {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .departments {
+    h1 {
+      font-size: 22px;
+      margin-block: 40px 20px;
+    }
+    &__inner {
+      &_department {
+        padding: 20px 20px;
+       height: 140px;
+        &_desc {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .departments {
+    &__inner {
+      &_department {
+        &_desc {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

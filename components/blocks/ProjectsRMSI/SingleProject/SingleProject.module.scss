@@ -1,0 +1,109 @@
+.projectRMSI {
+  margin-bottom: 90px;
+   h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > div {
+      max-width: 1440px;
+      cursor: pointer;
+      & > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: #0174C8;
+        & > h5 {
+          color: #0174C8;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .projectCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #f9fafb;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projectRMSI {
+    margin-bottom: 70px;
+    h1 {
+      color: #000;
+      font-size: 30px;
+      font-weight: 400;
+      margin-block: 20px;
+    }
+    &__inner {
+      gap: 15px;
+      & > div {
+        & > a {
+          & > h5 {
+            font-size: 18px;
+            font-weight: 500;
+          }
+           svg {
+            height: 35px;
+            width: 35px;
+             margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .projectCard {
+      padding: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .projectRMSI {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 22px;
+      margin-block:40px 5px;
+    }
+    &__inner {
+
+      & > div {
+        box-shadow: 0px 4px 6px 0px rgba(85, 85, 85, 0.08);
+
+        & > a {
+
+          justify-content: center;
+          & > h5 {
+            font-size: 16px;
+            color: #309C54;;
+          }
+          svg {
+           display: none;
+          }
+        }
+      }
+    }
+    .projectCard {
+      border-radius: 5px;
+      background: #fff;
+      padding: 22px 35px;
+    }
+  }
+}

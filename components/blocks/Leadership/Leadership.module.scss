@@ -1,0 +1,132 @@
+.leadership {
+  margin-bottom: 90px;
+   h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .additionCard {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 30px;
+      background: #fff;
+      border-bottom: 1px solid rgba(48, 156, 84, 0.40);
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 120px;
+      }
+
+      p {
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 449px;
+      }
+
+
+        a {
+          display: flex;
+          padding: 7px 20px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 29px;
+          background: #309C54;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          min-width: max-content;
+
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .leadership {
+    margin-bottom: 70px;
+
+    h1 {
+      font-size: 30px;
+      margin-block: 20px 45px;
+      font-weight: 400;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .additionCard {
+        gap: 84px;
+        p {
+          width: initial;
+          max-width: 569px;
+        }
+
+
+        a {
+          min-width: 35px;
+          min-height: 35px;
+          padding: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 530px) {
+    .leadership {
+        .additionCard {
+          gap: 50px;
+
+        }
+      }}
+  @media only screen and (max-width: 390px) {
+  .leadership {
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 22px;
+      margin-block: 40px;
+    }
+
+    &__inner {
+      .additionCard {
+        gap: 15px;
+        flex-direction: column;
+        p {
+          max-width: initial;
+        }
+      }
+    }
+  }
+}

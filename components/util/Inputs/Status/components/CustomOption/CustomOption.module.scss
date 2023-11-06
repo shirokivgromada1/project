@@ -1,0 +1,22 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  & > b {
+    color: #000;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  & > p {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

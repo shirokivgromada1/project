@@ -1,0 +1,283 @@
+.enterprise {
+  margin-bottom: 70px;
+  h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-block: 40px;
+    text-transform: uppercase;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+   &_item {
+     display: flex;
+     gap: 40px;
+     min-width: 560px;
+     margin-inline: auto;
+
+     &_photo {
+       img {
+         min-width: 305px !important;
+         min-height: 307px !important;
+       }
+     }
+
+    &_desc {
+      display: flex;
+      flex-direction:column;
+      gap: 12px;justify-content: center;
+      max-height: 307px;
+      max-width: 476px;
+      h4 {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 7px;
+      }
+      & div {
+        h5 {
+          color: #000;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 7px;
+        }
+        & div:nth-child(1) {
+          padding-bottom: 10px;
+        }
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+        p {
+          color: #000;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+     &_mobschedule {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+     }
+   }
+    &_powers {
+      max-width: 1180px;
+      margin-inline: auto;
+      p {
+        color: #000;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      h3 {
+        color: #000;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .enterprise {
+    margin-bottom: 60px;
+    h1 {
+      color: #000;
+      font-size: 30px;
+      font-weight: 400;
+      margin-block:20px;
+      max-width: 556px;
+      margin-inline: auto;
+    }
+    &__inner {
+      gap: 30px;
+      &_item {
+        gap: 30px;
+        &_photo {
+          img {
+            min-width: 305px !important;
+            min-height: 287px !important;
+            margin: 0 !important;
+          }
+        }
+        &_desc {
+          max-height: 287px;
+          h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+          }
+          & div {
+            h5 {
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      &_powers {
+        h3 {
+
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 620px) {
+  .enterprise {
+    &__inner {
+      &_item {
+        flex-direction: column;
+        gap: 12px;
+        min-width: initial;
+        &_photo {
+          margin-inline: auto;
+          img {
+            width: 350px !important;
+            height: 350px !important;
+          }
+        }
+        &_mobschedule div:first-of-type {
+          order: 2;
+        }
+        &_mobschedule {
+          gap: 15px !important;
+        }
+        &_desc {
+          max-height: initial;
+          gap: 0px;
+          padding-top: 0;
+
+          div:nth-child(2) {
+            gap: 0;
+            padding-top: 10px;
+          }
+          h5 {
+            color: #000;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          & > p {
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            &:not(:last-child) {
+              margin-bottom: 7px;
+            }
+          }
+          h4 {
+            text-align: center;
+            font-size: 16px;
+
+          }
+          h3 {
+            color: #000;
+            margin-bottom: 7px;
+            text-align: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          & div {
+            h5 {
+              font-size: 18px;
+              margin-bottom: 10px;
+              text-align: center;
+            }
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 460px) {
+  .enterprise {
+    &__inner {
+      &_item {
+        &_mobschedule {
+          flex-direction: column;
+          gap: 10px;
+          p, h5 {
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .enterprise {
+    h1 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-block: 40px 20px;
+      text-transform: uppercase;
+    }
+    &__inner {
+      &_item {
+        flex-direction: column;
+        gap: 12px;
+        &_photo {
+          margin-inline: auto;
+          img {
+            min-height: initial !important;
+            min-width:initial !important;
+            height: auto !important;
+          }
+        }
+        &_desc {
+          h4 {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+}

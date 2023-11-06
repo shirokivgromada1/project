@@ -1,0 +1,110 @@
+.documents {
+  margin-bottom: 90px;
+  min-height: 50vh;
+   h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 40px;
+  }
+  &__inner {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .document {
+      display: flex;
+      width: calc(33.33% - 20px);
+      max-width: 22.75rem;
+      height: 138px;
+      padding: 30px 30px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      background: #FFF;
+      box-shadow: 0px 4px 19px 0px rgba(49, 49, 49, 0.07);
+      transition: background 0.4s ease;
+      &:hover {
+        background: #309c54;
+        h5 {
+          color: #fff;
+        }
+      }
+      h5 {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 830px) {
+  .documents {
+    margin-bottom: 70px;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-block: 20px;
+    }
+    &__inner {
+      .document {
+        width: calc(49% - 20px);
+        height: 91px;
+        padding: 30px 20px;
+        h5 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .documents {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-block: 20px;
+    }
+    &__inner {
+      flex-direction: column;
+      gap: 15px;
+      .document {
+        width: calc(100%);
+        max-width: initial;
+        height: auto;
+        padding: 35px 25px;
+        h5 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .documents {
+    h1 {
+      font-size: 22px;
+      margin-block: 40px 20px;
+    }
+  }
+}

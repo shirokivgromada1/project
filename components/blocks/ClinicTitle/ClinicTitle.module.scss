@@ -1,0 +1,80 @@
+.clinic {
+  margin-bottom: 110px;
+  margin-inline: auto;
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: center;
+    margin-block: 40px 20px;
+    h1 {
+      color: #000;
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 115.023%; /* 46.009px */
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 9px 28px;
+      border-radius: 29px;
+      background: #309c54;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .clinic {
+    margin-bottom: 70px;
+    &__title {
+      margin-block: 25px;
+      align-items: flex-end;
+      h1 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: normal;
+      }
+      img {
+        width: 36px !important;
+        height: 42px !important;
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .clinic {
+    margin-bottom: 70px;
+    &__title {
+      margin-block:40px 15px;
+      h1 {
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+}

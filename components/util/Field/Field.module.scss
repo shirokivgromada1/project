@@ -1,0 +1,80 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	&__label {
+		& > label {
+			color: #000;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+		& > p {
+			margin-top: 5px;
+			color: rgba(0, 0, 0, 0.54);
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			max-width: 594px;
+		}
+	}
+	&__error {
+		color: $error-primary-color;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	&__input {
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+		width: fit-content;
+		position: relative;
+		& > div {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			& svg {
+				width: 19px;
+				height: 19px;
+			}
+		}
+
+		& > input {
+			border-radius: 7px;
+			border: 1px solid $primary-color;
+			width: 210px;
+			height: 37px;
+			padding: 9px 20px;
+			color: #000;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			&:focus,
+			&:focus-visible,
+			&:active {
+				border: 1px solid $primary-color;
+				outline: 1px solid $primary-color;
+			}
+		}
+		&_error {
+			& > input {
+				border-color: $error-primary-color;
+				&:focus,
+				&:focus-visible,
+				&:active {
+					border: 1px solid $error-primary-color;
+					outline: 1px solid $error-primary-color;
+				}
+			}
+		}
+	}
+}
