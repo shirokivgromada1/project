@@ -6,7 +6,7 @@ import { GetServerSidePropsContext } from "next";
 import { AnnouncementCard } from "@/components/announcements";
 
 export default function Home(
-  props: AsyncReturnType<typeof getStaticProps>["props"]
+  props: AsyncReturnType<typeof getServerSideProps>["props"]
 ) {
   // data passes though in production mode and data is updated to the sidebar data in edit-mode
   const { data } = useTina({
@@ -22,19 +22,7 @@ export default function Home(
   );
 }
 
-export const getStaticPaths = async () => {
-  const { data } = await client.queries.announcementsConnection();
-  const paths = data?.announcementsConnection?.edges?.map((x) => {
-    return { params: { filename: x?.node?._sys.filename } };
-  });
-
-  return {
-    paths,
-    fallback: "blocking",
-  };
-};
-
-export const getStaticProps = async (ctx: GetServerSidePropsContext) => {
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const { data, query, variables } =
     await client.queries.blogAnnouncementsQuery({
       relativePath: ctx?.params?.filename + ".mdx",
@@ -46,8 +34,8 @@ export const getStaticProps = async (ctx: GetServerSidePropsContext) => {
         ...data,
         url: `${process.env.NEXT_BASE_URL}/announcements/${ctx?.params?.filename}`,
       },
-      query,
-      variables,
+      query: query,
+      variables: variables,
     },
   };
 };
