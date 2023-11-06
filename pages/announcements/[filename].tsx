@@ -17,7 +17,11 @@ export default function Home(
 
   return (
     <Layout data={data.global}>
-      <AnnouncementCard {...data.announcements} url={data.url} />
+      <AnnouncementCard
+        {...data.announcements}
+        url={data.url}
+        filename={data.filename}
+      />
     </Layout>
   );
 }
@@ -32,6 +36,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
     props: {
       data: {
         ...data,
+        filename: ctx?.params?.filename,
         url: `${process.env.NEXT_BASE_URL}/announcements/${ctx?.params?.filename}`,
       },
       query: query,
